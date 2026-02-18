@@ -19,7 +19,7 @@ return {
 			return
 		end
 
-		ya.manager_emit("shell", {
+		ya.emit("shell", {
 			confirm = true,
 			"cp -a --reflink=always " .. st.yanked .. " " .. st.cwd,
 		})
